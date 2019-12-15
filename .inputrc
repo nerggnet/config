@@ -1,0 +1,20 @@
+#set bell-style visible
+set convert-meta Off
+set output-meta On
+set input-meta On
+set show-all-if-ambiguous On
+set horizontal-scroll-mode Off
+set expand-tilde Off
+set visible-stats On
+set meta-flag On
+
+"\e[D": backward-char
+"\e[C": forward-char
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\e[3~": forward-backward-delete-char
+#"\M-\t": menu-complete
+#RUBOUT: forward-backward-delete-char
+
