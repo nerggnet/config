@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=dwm
+Comment=dwm Session
+Exec=/home/niclas/.config/dwm/launch.sh
+Type=Application
+Keywords=wm;tiling
