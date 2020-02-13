@@ -5,11 +5,9 @@ call minpac#add('https://github.com/k-takata/minpac', {'type': 'opt'})
 call minpac#add('https://github.com/junegunn/fzf.vim', {'type': 'opt'})
 call minpac#add('https://github.com/itchyny/lightline.vim', {'type': 'opt'})
 call minpac#add('https://github.com/scrooloose/nerdtree', {'type': 'opt'})
-"call minpac#add('https://github.com/vim-airline/vim-airline', {'type': 'opt'})
 packadd fzf.vim
 packadd lightline.vim
 packadd nerdtree
-"packadd vim-airline
 
 " fzf options
 set rtp+=/usr/local/opt/fzf
