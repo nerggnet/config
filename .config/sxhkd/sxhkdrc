@@ -6,6 +6,10 @@
 super + Return
 	termite
 
+# terminal emulator (alternative)
+alt + Return
+	termite
+
 # program launcher
 super + @space
 	dmenu_run
@@ -119,3 +123,29 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Volume Keys
+XF86AudioMute
+	pamixer -t
+super + F1
+	pamixer -t
+XF86AudioRaiseVolume
+	pamixer -i 5
+super + F3
+	pamixer -i 5
+XF86AudioLowerVolume
+	pamixer -d 5
+super + F2
+	pamixer -d 5
+XF86AudioRaiseVolume + shift
+	pamixer -i 1
+super + shift + F3
+	pamixer -i 1
+XF86AudioLowerVolume + shift
+	pamixer -d 1
+super + shift + F2
+	pamixer -d 1
+
+# Sleep/suspend
+super + F12
+	systemctl suspend
