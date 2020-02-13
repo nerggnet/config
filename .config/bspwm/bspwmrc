@@ -8,6 +8,7 @@ nitrogen --restore &
 
 #### MONITORS ####
 bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
+bspc monitor HDMI1 -d 1 2 3 4 5 6 7 8 9
 bspc monitor DP1 -d 1 2 3 4 5 6 7 8 9
 bspc monitor DP2 -d 1 2 3 4 5 6 7 8 9
 
@@ -44,10 +45,11 @@ bspc config presel_feedback_color	      "#5e81ac"
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
 xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_eDP1)
+xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI1)
 xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DP1)
 xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DP2)
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Gimp desktop='^8'
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
